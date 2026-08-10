@@ -5,7 +5,7 @@ A near-real-time streaming data pipeline built on Databricks Free Edition, simul
 Built as a personal project to gain hands-on streaming/lakehouse experience alongside daily batch ETL work.
 
 ## Architecture
-![Architecture](docs/architecture.png)
+![Architecture](architecture.png)
 
 
 ## Tech Stack

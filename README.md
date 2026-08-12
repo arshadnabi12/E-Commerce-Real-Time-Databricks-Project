@@ -20,7 +20,7 @@ Python · AWS S3 · Databricks Auto Loader · Lakeflow Declarative Pipelines (De
 
 - **Orders** (fact/event stream) — generated continuously in batches, simulating live order traffic
 - **Customers** (dimension) — generated once as a fixed pool; orders reference real customer IDs from this pool, so repeat-customer behavior occurs naturally
-  ![](customer_data_generator.png)
+![](customer_data_generator.png)
 
 ## Medallion Layers
 
@@ -29,7 +29,8 @@ Python · AWS S3 · Databricks Auto Loader · Lakeflow Declarative Pipelines (De
 **Silver** — Deduplication, type casting, and data quality enforcement via `expect_or_drop` expectations (e.g. positive amounts, valid order status, non-null IDs). Rows failing validation are not silently dropped — they're captured in `rejected_orders` for visibility. `silver_order_items` flattens the nested items array and is filtered to only include items belonging to orders that passed `silver_orders` validation (referential integrity across Silver tables).
 
 **Gold** — Business-facing aggregations: revenue trends (daily/hourly), order status breakdown, average order value, top products, and customer-segmented revenue (by country, age group, new vs. returning).
-![](Tranformations_Pipeline.png)
+
+![](Transformations_Pipeline.png)
 ## Possible Future Improvements
 
 - Continuous pipeline mode with dedicated compute for true low-latency streaming

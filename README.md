@@ -4,7 +4,7 @@ A near-real-time streaming data pipeline built on Databricks, simulating an e-co
 
 Built as a personal project to gain hands-on streaming/lakehouse experience alongside daily batch ETL work.
 
-Dashboard Link - https://app.powerbi.com/view?r=eyJrIjoiYzkyMmVjNmUtMjgyNi00ZGNkLWJlM2UtMWM3OGUzNDQxZmVjIiwidCI6IjAzODkyNDQyLWUwYzMtNDk5MS04MjBjLWM3ZTc1NzdmMjNkMSJ9
+Dashboard Link - [E-Commerce Order Analytics](https://app.powerbi.com/view?r=eyJrIjoiYzkyMmVjNmUtMjgyNi00ZGNkLWJlM2UtMWM3OGUzNDQxZmVjIiwidCI6IjAzODkyNDQyLWUwYzMtNDk5MS04MjBjLWM3ZTc1NzdmMjNkMSJ9)
 
 
 ## Architecture

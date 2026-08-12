@@ -20,7 +20,7 @@ Python · AWS S3 · Databricks Auto Loader · Lakeflow Declarative Pipelines (De
 
 - **Orders** (fact/event stream) — generated continuously in batches, simulating live order traffic
 - **Customers** (dimension) — generated once as a fixed pool; orders reference real customer IDs from this pool, so repeat-customer behavior occurs naturally
-![](customer_data_generator.png)
+![](customer_data_generator.PNG)
 
 ## Medallion Layers
 
@@ -30,7 +30,7 @@ Python · AWS S3 · Databricks Auto Loader · Lakeflow Declarative Pipelines (De
 
 **Gold** — Business-facing aggregations: revenue trends (daily/hourly), order status breakdown, average order value, top products, and customer-segmented revenue (by country, age group, new vs. returning).
 
-![](Transformations_Pipeline.png)
+![](Transformations_Pipeline.PNG)
 ## Possible Future Improvements
 
 - Continuous pipeline mode with dedicated compute for true low-latency streaming

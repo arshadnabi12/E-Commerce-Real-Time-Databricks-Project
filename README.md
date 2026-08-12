@@ -31,6 +31,9 @@ Python · AWS S3 · Databricks Auto Loader · Lakeflow Declarative Pipelines (De
 **Gold** — Business-facing aggregations: revenue trends (daily/hourly), order status breakdown, average order value, top products, and customer-segmented revenue (by country, age group, new vs. returning).
 
 ![](Transformations_Pipeline.PNG)
+
+## Mail Workflow
+![](main_workflow.PNG)
 ## Possible Future Improvements
 
 - Continuous pipeline mode with dedicated compute for true low-latency streaming

@@ -14,7 +14,7 @@ Dashboard Link - [E-Commerce Order Analytics](https://app.powerbi.com/view?r=eyJ
 
 ## Tech Stack
 
-Python · AWS S3 · Databricks Auto Loader · Lakeflow Declarative Pipelines (Delta Live Tables) · Delta Lake · Databricks SQL Warehouse · Power BI
+Python - Pyspark · AWS S3 · Databricks Auto Loader · Lakeflow Declarative Pipelines (Delta Live Tables) · Delta Lake · Databricks SQL Warehouse · Power BI
 
 ## Data Sources
 

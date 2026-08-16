@@ -7,7 +7,7 @@ from pyspark.sql.functions import *
 
 def gold_revenue_by_age_group():
     customers=dlt.read("silver_customers")
-    orders=dlt.read("silver_orders")
+    orders=dlt.read("silver_orders").filter(col('status')=='delivered')
     return(
         orders.join(customers,on="customer_id",how="inner")
         .withColumn(

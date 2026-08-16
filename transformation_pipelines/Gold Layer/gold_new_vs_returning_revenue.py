@@ -7,7 +7,7 @@ import dlt
 
 def gold_new_vs_returning_revenue():
     customers=dlt.read("silver_customers")
-    orders=dlt.read("silver_orders")
+    orders=dlt.read("silver_orders").filter(col('status')=='delivered')
     return(
         orders.join(customers,on="customer_id",how="inner")
         .withColumn(

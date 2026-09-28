@@ -32,7 +32,7 @@ Python - Pyspark · AWS S3 · Databricks Auto Loader · Lakeflow Declarative Pip
 
 ![](Transformations_Pipeline.PNG)
 
-## Mail Workflow
+## Main Workflow
 ![](main_workflow.PNG)
 ## Possible Future Improvements
 

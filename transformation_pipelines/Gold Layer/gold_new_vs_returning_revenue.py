@@ -12,7 +12,7 @@ def gold_new_vs_returning_revenue():
         orders.join(customers,on="customer_id",how="inner")
         .withColumn(
             "customer_type",
-            when(datediff(current_date(),col("signup_date"))<=30,"New")
+            when(datediff(current_date(),col("signup_date"))==0,"New")
             .otherwise("Existing")
         )
         .groupBy("customer_type")

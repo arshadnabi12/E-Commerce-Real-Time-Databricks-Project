@@ -18,9 +18,10 @@ def silver_orders():
         .select(
             "order_id",
             "customer_id",
-            "amount",
+            col('amount').cast("decimal(10,2)"),
             "status",
-            col('order_timestamp').cast('timestamp').alias('order_timestamp'),"_ingested_at"
+            col('order_timestamp').cast('timestamp').alias('order_timestamp'),
+            "_ingested_at"
         )
     )
 
@@ -33,9 +34,9 @@ def orders_bad_records():
     return (
         dlt.readStream("bronze_orders")
         .filter(
-            (col("amount")<=0)|
             col("order_id").isNull()|
-            (~col("status").isin('placed','confirmed','shipped','delivered','cancelled'))
+            (~col("status").isin('placed','confirmed','shipped','delivered','cancelled'))|
+            (col('amount')<=0)
         )
     )
 
